@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+
+  &__title {
+    justify-self: flex-start;
+    flex-grow: 2;
+  }
+  &__icons {
+    justify-self: flex-end;
+    display: flex;
+    column-gap: 3rem;
+    justify-content: center;
+    z-index: 300;
+  }
+}
+.icon {
+  width: 2.5rem;
+  height: 2.4rem;
+}

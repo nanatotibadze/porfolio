@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+.container {
+  width: 100vw;
+  background-color: rgb(21, 21, 21);
+  font-family: "Space Grotesk", sans-serif;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
