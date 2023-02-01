@@ -1,0 +1,44 @@
+.project {
+  min-width: 100%;
+  &__title {
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 70rem));
+    grid-template-rows: repeat(3, minmax(min-content, 48rem));
+    gap: 7rem;
+    position: relative;
+    &__links {
+      width: 54rem;
+      height: 44rem;
+
+      position: absolute;
+      top: 0;
+
+      background-color: red;
+    }
+
+    &__item {
+    }
+  }
+
+  img {
+    width: 54rem;
+    height: 44rem;
+  }
+}
+
+hr {
+  width: 100%;
+  margin: 0;
+}
+
+// .project__content__links:hover {
+//   background-color: blue;
+// }
+
+.project__content__item:hover + .project__content__links {
+  display: block;
+  background-color: green;
+}

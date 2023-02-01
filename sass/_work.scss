@@ -1,0 +1,9 @@
+.work {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, 35rem));
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  gap: 6rem;
+  margin-bottom: 10rem;
+  min-width: 100%;
+}

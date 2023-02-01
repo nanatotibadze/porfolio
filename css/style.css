@@ -22,7 +22,7 @@ html {
   color: rgb(255, 255, 255);
   cursor: pointer;
   display: flex;
-  padding: 3.9rem 18rem 3.9rem 14rem;
+  padding: 3.9rem 5rem 3.9rem 14rem;
   flex-direction: column;
   position: relative;
   max-width: 100vw;
@@ -80,6 +80,8 @@ button {
 
 .navbar {
   display: flex;
+  min-width: 100%;
+  padding-right: 15rem;
 }
 .navbar__title {
   justify-self: flex-start;
@@ -102,6 +104,7 @@ button {
   display: flex;
   padding-top: 10rem;
   padding-bottom: 10rem;
+  max-width: 100vw;
 }
 .header__content {
   display: flex;
@@ -115,7 +118,7 @@ button {
 }
 
 .user__image {
-  width: 50rem;
+  width: 48rem;
   height: 72rem;
   position: absolute;
   top: 0;
@@ -124,9 +127,54 @@ button {
 }
 
 .name__bold {
-  border-bottom: 10rem;
-  outline: 10px solid red;
-  outline-offset: -30px;
+  display: inline-block;
+  line-height: 0.7em;
+  position: relative;
+  border-bottom: 10px solid rgb(78, 225, 160);
+  padding-bottom: 1rem;
+  text-decoration: none;
+}
+
+.work {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, 35rem));
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  gap: 6rem;
+  margin-bottom: 10rem;
+  min-width: 100%;
+}
+
+.project {
+  min-width: 100%;
+}
+.project__content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, 70rem));
+  grid-template-rows: repeat(3, minmax(min-content, 48rem));
+  gap: 7rem;
+  position: relative;
+}
+.project__content__links {
+  width: 54rem;
+  height: 44rem;
+  position: absolute;
+  top: 0;
+  background-color: red;
+}
+.project img {
+  width: 54rem;
+  height: 44rem;
+}
+
+hr {
+  width: 100%;
+  margin: 0;
+}
+
+.project__content__item:hover + .project__content__links {
+  display: block;
+  background-color: green;
 }
 
 /*# sourceMappingURL=style.css.map */
